@@ -14,4 +14,14 @@ function Navbar() {
     );
 }
 
+function Footer() {
+    return (
+    <footer className="Footer">
+        <h3>Created by: Jose_Torres</h3>
+    </footer>
+    );
+}
+
+
+
 export default Navbar;
