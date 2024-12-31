@@ -1,12 +1,18 @@
-import './styles/navbar.css';
+import QuantityPicker from './quantityPicker';
+import './styles/product.css';
 
-function Product({ product }) {
+function Product() {
     return (
     <div className="product">
+        <img src="https://picsum.photos/300" alt="" />
         <h3>
-        {product.name} - {product.price}
+            I am a product        
         </h3>
-        <p>{product.description}</p>
+
+            <label>"$99.99"</label>
+            <label>"$99.99"</label>
+
+            <QuantityPicker></QuantityPicker>
     </div>
     );
 }

@@ -1,0 +1,24 @@
+.product {
+    background-color: aliceblue;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    height: 350px;
+    width: 250px;
+    padding: 10px;
+    
+    display: inline-block;
+    margin:0 10px 10px 0;
+}
+
+.product h3 {
+    text-align: center;
+    padding-top: 20px;
+    color: lightslategrey;
+    margin: 0;
+
+
+}
+
+.product img {
+    width: 250px;
+}

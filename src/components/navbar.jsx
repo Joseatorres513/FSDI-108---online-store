@@ -7,6 +7,7 @@ function Navbar() {
                 <div class="navbar-menu">
                     <a href="">Log In</a>
                     <a href="">Search</a>
+                    <a href="">Subscribe</a>
                     <a href="">Menu</a>
                 </div>
             </nav>
@@ -14,13 +15,7 @@ function Navbar() {
     );
 }
 
-function Footer() {
-    return (
-    <footer className="Footer">
-        <h3>Created by: Jose_Torres</h3>
-    </footer>
-    );
-}
+
 
 
 

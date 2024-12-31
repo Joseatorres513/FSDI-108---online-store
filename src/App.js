@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
+import Catalog from './pages/catalog';
+import Product from './components/product';
+import Footer from './components/footer';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
       <h1>Hello World from React!</h1>
+
+      <Catalog></Catalog>
+
+      <Footer></Footer>
     </div>
   );
-}
-
-function footer() {
-  return (
-    <div className="Footer">
-      <Navbar></Navbar>
-      <h3>"Created by: Jose_Torres"</h3>
-    </div>
-  )
 }
 
 export default App;
