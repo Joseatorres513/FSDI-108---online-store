@@ -3,7 +3,7 @@ import "./styles/catalog.css";
 
 function Catalog() {
     return(
-        <div className="catalog">
+        <div className="catalog page">
             <h1> Check out our amazing catalog!</h1>
 
             <Product></Product>

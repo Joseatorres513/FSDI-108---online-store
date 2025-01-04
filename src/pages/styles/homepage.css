@@ -1,0 +1,10 @@
+.homepage {
+    background-color: aliceblue;
+}
+
+.homepage h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: blue;
+    font-family: 'Segoe UI', sans-serif;
+}

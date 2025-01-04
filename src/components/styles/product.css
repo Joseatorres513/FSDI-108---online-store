@@ -2,8 +2,8 @@
     background-color: aliceblue;
     border: 1px solid gainsboro;
     border-radius: 4px;
-    height: 350px;
-    width: 250px;
+    height: 370px;
+    width: 270px;
     padding: 10px;
     
     display: inline-block;
@@ -12,7 +12,7 @@
 
 .product h3 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     color: lightslategrey;
     margin: 0;
 
