@@ -1,14 +1,136 @@
-.about {
-    background-color: aliceblue;
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DDFDFE; /* Light background for the page */
+    color: #141414; /* Dark text for readability */
+    line-height: 1.6;
 }
 
-.about h3 {
-    text-align: center;
-    padding-top: 20px;
-    color: blue
+/* About Page Styling */
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #40798C; /* Teal background for the content */
+    color: #DDFDFE; /* Light text for contrast */
+    border: 5px solid #B79D94; /* Soft brown border around the page */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-.about h1 {
+
+.about-header {
     text-align: center;
-    padding-top: 20px;
-    color: blue
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #141414; /* Dark header background */
+    color: #DDFDFE; /* Light text for readability */
+    border-radius: 10px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #A333D; /* Accent purple for the main title */
+}
+
+.about-header p {
+    font-size: 1.2rem;
+}
+
+/* Mission Statement Section */
+.mission {
+    margin-bottom: 40px;
+    background-color: #B79D94; /* Light brown background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #141414; /* Dark text for contrast */
+}
+
+.mission h2 {
+    color: #A333D; /* Accent purple for section titles */
+    margin-bottom: 10px;
+}
+
+.mission p {
+    font-size: 1.1rem;
+}
+
+/* Core Values Section */
+.values {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #40798C; /* Teal background */
+    border-radius: 10px;
+}
+
+.values h2 {
+    color: #A333D; /* Accent purple */
+    margin-bottom: 10px;
+}
+
+.values ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.values li {
+    margin-bottom: 10px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #141414; /* Dark background */
+    color: #DDFDFE; /* Light text */
+    border-radius: 10px;
+}
+
+.featured-products h2 {
+    color: #A333D; /* Accent purple */
+    margin-bottom: 10px;
+}
+
+.featured-products ul {
+    list-style-type: square;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background-color: #B79D94; /* Light brown background */
+    border-radius: 10px;
+    color: #141414; /* Dark text */
+}
+
+.contact h2 {
+    color: #A3333D; /* Accent purple */
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #40798C; /* Teal for links */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
 }

@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>
-        <h1>Hello World from React!</h1>
+        <h1>Welcome to Sports Essentials!</h1>
 
         <Routes>
           <Route path="/" element={<Homepage></Homepage>} />

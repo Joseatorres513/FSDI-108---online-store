@@ -1,10 +1,84 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DDFDFE;
+    color: #141414;
+}
+
 .homepage {
-    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #40798C;
+    color: #DDFDFE;
+    border: 10px solid #B79D94;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .homepage h1 {
-    text-align: center;
-    padding-top: 20px;
-    color: blue;
-    font-family: 'Segoe UI', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #a3333D
+}
+
+.homepage h3 {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    background-color: #DDFDFE;
+    color: #141414;
+}
+
+
+.homepage-image {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+    border: 5px solid #A3333D;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Text Styling */
+.homepage h1, 
+.homepage h3 {
+    margin-bottom: 20px;
+}
+
+/* Button Styling (Optional for Future Use) */
+.homepage button {
+    background-color: #A3333D; /* Button background */
+    color: #DDFDFE; /* Button text */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.homepage button:hover {
+    background-color: #B79D94; /* Hover color */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .homepage h1 {
+        font-size: 2rem;
+    }
+
+    .homepage h3 {
+        font-size: 1rem;
+    }
+
+    .homepage-image {
+        width: 90%;
+    }
 }

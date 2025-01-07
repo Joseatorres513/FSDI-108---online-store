@@ -9,7 +9,6 @@ function Product(props) {
             {props.data.title}       
         </h3>
 
-            <label>"$99.99"</label>
             <label>${props.data.price}</label>
 
             <QuantityPicker></QuantityPicker>
