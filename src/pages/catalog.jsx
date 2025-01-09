@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Product from "../components/product";
 import "./styles/catalog.css";
+import Product from "../components/product";
 
 const dummyData = [
     {

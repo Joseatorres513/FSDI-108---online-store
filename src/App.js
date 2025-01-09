@@ -6,6 +6,7 @@ import Product from './components/product';
 import Footer from './components/footer';
 import Homepage from './pages/homepage';
 import About from './pages/about';
+import Admin from './pages/admin';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Homepage></Homepage>} />
           <Route path="/catalog" element={<Catalog></Catalog>} />
           <Route path="/about" element={<About></About>} />
+          <Route path="/admin" element={<Admin></Admin>} />
         </Routes>
 
         

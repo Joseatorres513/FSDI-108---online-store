@@ -8,8 +8,12 @@ function Product(props) {
         <h3>
             {props.data.title}       
         </h3>
+            <div className='parent'>
 
-            <label>${props.data.price}</label>
+                <label>$99.99</label>
+                <label>${props.data.price}</label>
+            </div>
+            
 
             <QuantityPicker></QuantityPicker>
     </div>

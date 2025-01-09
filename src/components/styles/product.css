@@ -36,3 +36,8 @@
 .product:hover img {
     transform: skewX(-2deg);
 }
+
+.product .parent {
+    display: flex;
+    justify-content: space-around;
+}
