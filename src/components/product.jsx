@@ -2,6 +2,11 @@ import QuantityPicker from './quantityPicker';
 import './styles/product.css';
 
 function Product(props) {
+
+    function onAdd() {
+        console.log("Test");
+    }
+
     return (
     <div className="product">
         <img src={props.data.image} alt="" />
@@ -12,10 +17,13 @@ function Product(props) {
 
                 <label>$99.99</label>
                 <label>${props.data.price}</label>
+
             </div>
             
-
-            <QuantityPicker></QuantityPicker>
+            <div className="parent">
+                <QuantityPicker></QuantityPicker>
+                <button className='btn btn-sm btn-primary' onClick={onAdd}>Add</button>
+            </div>
     </div>
     );
 }
