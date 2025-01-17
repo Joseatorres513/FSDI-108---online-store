@@ -78,7 +78,7 @@ function Admin() {
 
     return (
         <div className="admin page">
-            <h1>Store Administration</h1>
+            <h1>Our Discounts Are Almost To Good To Be True!</h1>
 
             <div className='parent'>
                 <div className='prod-form nice-form'>

@@ -26,6 +26,9 @@ function About() {
                 <h2>Our Core Values</h2>
                 <ul>
                     <li>
+                        <strong>Innovation:</strong> We bring you the latest advancements in sports technology and design.
+                    </li>
+                    <li>
                         <strong>Quality First:</strong> We offer only the best products from trusted brands to ensure durability and performance.
                     </li>
                     <li>
@@ -33,9 +36,6 @@ function About() {
                     </li>
                     <li>
                         <strong>Customer Focus:</strong> Your satisfaction is our priority. We provide personalized recommendations and outstanding customer service.
-                    </li>
-                    <li>
-                        <strong>Innovation:</strong> We bring you the latest advancements in sports technology and design.
                     </li>
                 </ul>
             </section>

@@ -35,10 +35,10 @@ function Navbar() {
                     </ul>
                     <div className="d-flex" role="search">
                         
-                            <button className="btn btn-outline-success" to='/cart'>{user.name}</button>
+                            <button className="btn btn-outline-dark" to='/cart'>{user.name}</button>
 
-                        <Link className="btn btn-outline-success" to='/cart'>
-                            {cart.length}
+                        <Link className="btn btn-outline-light" to='/cart'>
+                        <span class="text-bg-light">View Cart</span>{cart.length}
                         </Link>
                     </div>
                 </div>
