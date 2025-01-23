@@ -21,7 +21,7 @@ body {
 }
 
 .homepage h1 {
-    font-size: 3rem;
+    font-size: 1px;
     margin-bottom: 20px;
     color: #a3333D
 }
@@ -32,6 +32,9 @@ body {
     margin-bottom: 20px;
     background-color: #DDFDFE;
     color: #141414;
+    border: 5px solid #A3333D;
+    display: block;
+    border-radius: 15px
 }
 
 
