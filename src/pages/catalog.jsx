@@ -12,12 +12,12 @@ function Catalog() {
     const [allCategories, setAllCategories] = useState([]);
     const [searchQuery, setSearchQuery] = useState(""); // For search functionality
 
-    function loadData(){
-        const prods = dataService.getProducts();
+    async function loadData(){
+        const prods = await dataService.getProducts();
         setAllProducts(prods);
         setFilteredProducts(prods);
 
-        const cats = dataService.getCategories();
+        const cats = await dataService.getCategories();
         setAllCategories(cats);
     }
     // do something when the cmp loads

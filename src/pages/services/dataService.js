@@ -1,3 +1,4 @@
+import axios from 'axios';
 
 const dummyData = [
     {
@@ -62,22 +63,26 @@ const dummyCategories = ["All", "Shoes", "Equipment", "Hoops", "Basketball", "So
 
 class DataService {
 
-    getProducts() {
+    async getProducts() {
         //TODO: CAll the server to get the prods
+        let response = await axios.get("http://127.0.0.1:5000/api/products");
+        return response.data;
 
-        return dummyData;
+       // return dummyData;
     }
 
-    saveProduct() {
-
-
+    async getCategories() {
+        let response = await axios.get("http://127.0.0.1:5000/api/categories");
+        return response.data;
+        
+        //return dummyCategories;
     }
 
-    getCategories() {
+    async saveProduct(product) {
+        let response = await axios.post("http://127.0.0.1:5000/api/products", product);
+        return response.data;
 
-        return dummyCategories;
     }
-
 
 }
 

@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles/admin.css';
+import dataService from './services/dataService';
 
 function Admin() {
 
@@ -13,6 +14,15 @@ function Admin() {
             category: ""
 
     });
+    async function loadData() {
+        const prods = await dataService.getProducts();
+        setAllProducts(prods);
+    }
+
+    useEffect(function(){
+        loadData();
+    }, []);
+
     function handleProduct(e) {
         const text = e.target.value;
         const name = e.target.name;
@@ -33,8 +43,13 @@ function Admin() {
         setProduct(copy);
     }
 
-    function saveProduct() {
+    async function saveProduct() {
         console.log(product);
+
+        // save to server
+
+        let savedProduct = await dataService.saveProduct(product);
+        console.log("saved: ", savedProduct);
 
         let copy = [...allProducts];
         copy.push(product);
@@ -78,7 +93,7 @@ function Admin() {
 
     return (
         <div className="admin page">
-            <h1>Our Discounts Are Almost To Good To Be True!</h1>
+            <h1>Admin</h1>
 
             <div className='parent'>
                 <div className='prod-form nice-form'>
@@ -137,5 +152,6 @@ function Admin() {
 
     );
 }
+
 
 export default Admin;
